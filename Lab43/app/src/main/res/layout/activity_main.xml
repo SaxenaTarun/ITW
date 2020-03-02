@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#FFC107"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:backgroundTint="@color/colorPrimary"
+        android:id="@+id/radio_group"
+        >
+        <Space
+            android:layout_height="wrap_content"
+            android:layout_width="100dp" />
+        <RadioButton android:id="@+id/radio_cse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/branchcse"
+            android:textColor="#ffffff"
+            android:onClick="onRadioButtonClicked"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <Space
+            android:layout_height="wrap_content"
+            android:layout_width="40dp" />
+        <RadioButton android:id="@+id/radio_ece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/branchece"
+            android:textColor="#ffffff"
+            android:onClick="onRadioButtonClicked"
+            android:textAlignment="center"
+            android:gravity="center_horizontal" />
+        <Space
+            android:layout_height="wrap_content"
+            android:layout_width="40dp" />
+    </RadioGroup>
+    <Spinner
+        android:id="@+id/yearofadmission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:contentDescription="Your Branch"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:entries="@array/yearofadmission"/>
+    <Spinner
+        android:id="@+id/rollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:contentDescription="Your Branch"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:entries="@array/rollnumbers"/>
+    <Space
+        android:layout_height="20dp"
+        android:layout_width="wrap_content">
+
+    </Space>
+
+    <Button
+        android:id="@+id/kyd"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:background="#ffffff"
+        android:gravity="center_horizontal"
+        android:onClick="onClickDetails"
+        android:text="Know You Enrollment Number"
+        android:textAlignment="center" />
+    <Space
+        android:layout_height="20dp"
+        android:layout_width="wrap_content">
+
+    </Space>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:id="@+id/enrollmentno"
+        android:gravity="center_horizontal" />
+
+
+
+</LinearLayout>
