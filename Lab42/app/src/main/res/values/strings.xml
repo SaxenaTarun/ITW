@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Lab-4(1q)</string>
+    <string-array name="year">
+        <item>2016</item>
+        <item>2017</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+    <string-array name="branch">
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>BSE</item>
+    </string-array>
+    <string-array name="roll">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

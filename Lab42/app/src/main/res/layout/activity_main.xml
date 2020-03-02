@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC107"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Enter Roll No:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="#FFFFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="152dp"
+        android:text="Enter Branch:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="421dp"
+        android:layout_height="82dp"
+        android:background="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            app:srcCompat="@mipmap/iiitn_foreground" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:background="#673AB7"
+        android:onClick="onclick"
+        android:text="Generate"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="189dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:text="Your Id will print here......"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="305dp"
+        android:layout_height="73dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_toEndOf="@id/imageView5"
+        android:layout_toRightOf="@id/imageView5"
+        android:text="Indian Institue of Information Technology,Nagpur"
+        android:textColor="#000000"
+        android:textSize="23dp"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints,NotSibling"
+        tools:layout_editor_absoluteY="5dp" />
+
+
+    <Spinner
+        android:id="@+id/yr"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:background="#F9FAFC"
+        android:entries="@array/year"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <Spinner
+        android:id="@+id/br"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:background="#FFFFFF"
+        android:entries="@array/branch"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Spinner
+        android:id="@+id/rn"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="218dp"
+        android:background="#FFFFFF"
+        android:entries="@array/roll"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:textColor="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:text="Enter Admission Year:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="3dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
