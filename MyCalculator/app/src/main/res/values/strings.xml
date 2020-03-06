@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">My Custom Calculator</string>
+    <string name="textarea_text">Get Calculating .....</string>
+</resources>

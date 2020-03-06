@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab5(3)</string>
+    <string name="head">Registration Form</string>
+    <string name="sub">Choose among the following:</string>
+    <string name="OS">OS</string>
+    <string name="DPPL">DPPL</string>
+    <string name="ITW">ITW</string>
+    <string name="DSA">DSA</string>
+    <string name="AI">AI</string>
+    <string name="ML">ML</string>
+    <string name="NLP">"NLP"</string>
+    <string name="ele">Choose among the following electives:</string>
+    <string name="Reg">Register</string>
+
+
+</resources>
